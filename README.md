@@ -43,7 +43,8 @@ sh install_nvidia_apex.sh
 * Please download the Cityscapes dataset from the [official website](https://www.cityscapes-dataset.com/) (registration required). After downloading, please put these files under the ```~/datasets/cityscapes/``` folder and run the following command in order to generate the correct segmentation maps
   ```
   cd cityscapesScripts
-  CITYSCAPES_DATASET=~/datasets/cityscapes/ python cityscapesscripts/preparation/createTrainIdLabelImgs.py
+  CITYSCAPES_DATASET=~/datasets/cityscapes/
+  python cityscapesscripts/preparation/createTrainIdLabelImgs.py
   ```
   If you want to use a different number of labels for the segmentation you can change them in the ```cityscapesScripts/cityscapesscripts/helpers/labels.py``` file.
   
